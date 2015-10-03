@@ -1,6 +1,6 @@
 package sort;
 /**
- * Creacion clase BubbleSort
+ * Creacion clase SelectionSort
  * @author Roberto Pereira
  * @version 03.10.2015
  *
