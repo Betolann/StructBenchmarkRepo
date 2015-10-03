@@ -1,0 +1,39 @@
+package trees;
+
+/**
+ * Creacion clase RedBlackTreeTest
+ * @author Roberto Pereira
+ * @version 03.10.2015
+ *
+ */
+public class RedBlackTreeTest {
+	/**
+	 * La clase main contendra un menu con las funciones del arbol
+	 * @param args
+	 */
+	public static void main(String[] args)
+    {            
+       
+       // Creación de objetos de RedBlack tree
+       RBTree rbt = new RBTree(Integer.MIN_VALUE); 
+       System.out.println("Red Black Tree Test\n");          
+       
+	//rbt.makeEmpty();
+	//rbt.isEmpty();
+	//rbt.countNodes();
+	//rbt.search();
+    //rbt.insert();
+       long t1 = System.nanoTime(); // Inicio del conteo en nanosegundos
+	   rbt.insert(5);
+	   rbt.insert(46);
+	   rbt.insert(93);
+	   rbt.insert(2);
+	   rbt.insert(76);
+	   rbt.insert(4);
+	   long t2 = System.nanoTime(); // Final del conteo en nanosegundos
+	   System.out.println ("N: " + rbt.countNodes() + "   " + "Ha tardado " + (t2-t1) + "nanosegundos	");
+	   System.out.println ("In order: ");
+	   rbt.inorder();
+       
+    }
+}
