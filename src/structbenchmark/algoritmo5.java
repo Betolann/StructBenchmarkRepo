@@ -10,7 +10,7 @@ public class algoritmo5 {
 	public static void main(String[] args) {
 	List<Integer> listaaleatorios = new ArrayList();
 	
-	for(int i=0;i<=800 // cantidad de elementos ;i++){
+	for(int i=0;i<=800 /* cantidad de elementos */ ;i++){
 		listaaleatorios.add(i);
 		
 	
