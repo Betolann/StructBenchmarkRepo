@@ -1,12 +1,17 @@
 package sort;
-
+/**
+ * Creacion clase SelecionSort
+ * @author Roberto Pereira
+ * @version 03.10.2015
+ *
+ */
 public class BubbleSort {
 	
 	/**
 	 * Ordena el arreglo adecuadamente
 	 * @param array: El arreglo el cual desea ordenar.
 	 */
-	public void OrdenarBurbuja(int [] array) {
+	public static void bubblesort(int [] array) {
 		int aux; // Variable Auxiliar
 		boolean cambios = false; // Cambia a verdadera cada vez que se efectua un cambio
 		
@@ -30,4 +35,3 @@ public class BubbleSort {
 	}
 
 }
-
