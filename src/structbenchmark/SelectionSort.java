@@ -5,12 +5,14 @@ package sort;
  * @version 03.10.2015
  *
  */
+
 public class SelectionSort {
+	
 	/**
 	 * Ordena el arreglo adecuadamente
 	 * @param array: El arreglo el cual se ordenara
 	 */
-	public static void OrdenarSeleccion(int[] array){
+	public static void selectionsort(int[] array){
 		
 
 			for(int i=0; i<array.length-1; i++){ // i es el indice el cual recorrera el arreglo para realizar comparaciones
@@ -28,5 +30,7 @@ public class SelectionSort {
 				
 			}		
 	}
+
 }
+
 
