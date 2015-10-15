@@ -1,149 +1,102 @@
 package sort;
 /**
  * Creacion clase Main
- * @author Roberto Pereira
- * @version 03.10.2015
- *
+ * @author Roberto y Antony 
+ * @version 08.10.2015
  */
-public class Main {
-	/**
-	 * Son los casos de prueba
-	 * @param args: El arreglo el cual desea ordenar.
-	 */
-	public static void main(String[] args) {
-		
-		System.out.println ("BubbleSort"); // A continuacion casos de prueba N vs nanosegundos del BubbleSort 
-		// Arreglo Asignado 
-		{int []arreglo = {42, 17, 8, 32, 43, 22, 21, 4, 29, 3}; 
-		BubbleSort x = new BubbleSort(); // Creacion de una instancia de BubbleSort
-		long t1 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x.OrdenarBurbuja(arreglo); // Llamar la funcion de ordenamiento
-		long t2 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo[i]);
-			
-		//}
-		
-		System.out.println ("N: " + arreglo.length + "   " + "Ha tardado " + (t2-t1) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo2 = {60, 46, 39, 5, 22, 71, 37, 6, 17, 99, 88, 89, 78, 51, 81, 25, 60, 96, 9, 24, 83, 4, 12, 69, 92, 34, 73, 13, 31, 11, 23, 48, 38, 80, 41, 86, 67, 43, 77, 21, 18, 65, 50, 58, 62, 95, 85, 56, 7, 28, 74, 66, 79, 55, 59, 40, 29, 84, 30, 8, 1, 32, 2, 90, 100, 75, 45, 76, 10, 36, 70, 94, 14, 63, 16, 44, 64, 87, 15, 97, 57, 27, 20, 47, 54, 49, 35, 42, 93, 91, 52, 61, 82, 26, 3, 98, 19, 68, 72, 53};
-		BubbleSort x2 = new BubbleSort(); // Creacion de una instancia de BubbleSort
-		long t3 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x2.OrdenarBurbuja(arreglo2); // Llamar la funcion de ordenamiento
-		long t4 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo2.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo2[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo2.length + "  " + "Ha tardado " + (t4-t3) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo3 = {64, 240, 125, 120, 80, 30, 159, 206, 224, 22, 244, 91, 137, 211, 74, 46, 49, 84, 52, 72, 23, 71, 199, 114, 36, 238, 205, 129, 134, 10, 11, 89, 110, 130, 165, 126, 55, 225, 133, 82, 178, 57, 67, 139, 2, 143, 104, 94, 230, 90, 65, 99, 78, 25, 131, 149, 146, 32, 250, 26, 208, 31, 14, 176, 48, 161, 116, 222, 54, 105, 106, 124, 235, 92, 197, 171, 118, 85, 163, 113, 209, 73, 195, 27, 107, 192, 248, 193, 41, 187, 172, 121, 12, 3, 87, 168, 236, 188, 247, 212, 19, 162, 183, 16, 95, 112, 83, 241, 33, 170, 246, 69, 123, 127, 154, 70, 151, 213, 93, 185, 147, 39, 167, 132, 152, 108, 1, 38, 141, 9, 196, 98, 29, 37, 181, 234, 179, 160, 204, 51, 59, 156, 233, 226, 4, 189, 122, 218, 119, 43, 228, 115, 200, 6, 88, 58, 24, 219, 144, 135, 231, 169, 221, 202, 75, 243, 150, 239, 66, 5, 182, 237, 201, 166, 97, 194, 173, 191, 53, 101, 18, 180, 210, 20, 47, 109, 96, 117, 63, 86, 45, 245, 13, 227, 17, 214, 77, 142, 249, 35, 220, 21, 164, 42, 157, 34, 148, 15, 153, 64, 103, 217, 8, 229, 203, 190, 102, 215, 198, 50, 68, 232, 216, 145, 100, 7, 242, 138, 184, 76, 79, 177, 155, 136, 223, 186, 28, 56, 44, 175, 111, 207, 128, 140, 40, 61, 158, 60, 81, 62};
-		BubbleSort x3 = new BubbleSort(); // Creacion de una instancia de BubbleSort
-		long t5 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x3.OrdenarBurbuja(arreglo3); // Llamar la funcion de ordenamiento
-		long t6 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo3.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo3[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo3.length + "  " + "Ha tardado " + (t6-t5) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo4 = {192, 326, 170, 311, 96, 342, 291, 260, 224, 226, 33, 349, 331, 162, 385, 309, 225, 131, 159, 83, 129, 97, 380, 319, 141, 222, 336, 132, 24, 223, 215, 357, 37, 365, 368, 46, 381, 325, 206, 259, 193, 228, 341, 49, 140, 195, 55, 35, 98, 317, 30, 154, 293, 370, 31, 185, 177, 54, 354, 242, 377, 110, 262, 164, 130, 308, 398, 340, 295, 209, 273, 250, 353, 310, 53, 21, 78, 113, 329, 361, 202, 316, 323, 314, 77, 214, 39, 343, 104, 287, 103, 25, 267, 134, 379, 14, 256, 263, 299, 240, 313, 312, 335, 95, 115, 235, 188, 213, 52, 179, 87, 138, 279, 6, 284, 234, 7, 277, 356, 207, 117, 10, 241, 345, 50, 268, 196, 258, 93, 5, 94, 4, 40, 63, 72, 190, 210, 42, 36, 191, 232, 136, 171, 283, 189, 246, 17, 337, 69, 73, 333, 327, 81, 91, 183, 20, 22, 355, 146, 243, 174, 38, 328, 300, 152, 186, 161, 44, 198, 142, 375, 252, 219, 48, 127, 369, 41, 290, 305, 306, 56, 297, 384, 90, 251, 112, 253, 358, 143, 285, 211, 27, 62, 116, 338, 176, 26, 157, 321, 75, 339, 217, 289, 400, 372, 374, 239, 387, 307, 264, 86, 236, 160, 296, 123, 378, 80, 13, 294, 248, 395, 82, 238, 265, 200, 348, 373, 158, 133, 332, 43, 322, 67, 216, 9, 65, 2, 347, 364, 23, 18, 125, 0, 302, 270, 286, 58, 187, 64, 394, 367, 388, 360, 229, 203, 180, 16, 261, 245, 57, 28, 255, 76, 165, 280, 208, 19, 231, 371, 399, 233, 334, 257, 29, 204, 12, 85, 71, 47, 151, 352, 106, 304, 272, 105, 205, 254, 15, 149, 218, 8, 128, 351, 178, 201, 318, 382, 301, 324, 99, 376, 59, 60, 166, 144, 199, 386, 147, 173, 181, 362, 156, 391, 288, 383, 74, 281, 34, 114, 51, 396, 109, 66, 276, 315, 126, 79, 392, 346, 303, 32, 275, 244, 230, 366, 101, 118, 121, 168, 167, 135, 344, 70, 363, 88, 137, 124, 212, 61, 220, 247, 271, 145, 237, 100, 197, 111, 3, 390, 350, 107, 119, 269, 150, 84, 11, 194, 359, 330, 153, 389, 108, 89, 298, 320, 282, 227, 393, 249, 274, 139, 184, 155, 292, 169, 397, 122, 92, 148, 266, 102, 120, 278, 175, 221, 68, 1, 172, 45, 182};
-		BubbleSort x4 = new BubbleSort(); // Creacion de una instancia de BubbleSort
-		long t7 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x4.OrdenarBurbuja(arreglo4); // Llamar la funcion de ordenamiento
-		long t8 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo4.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo4[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo4.length + "  " + "Ha tardado " + (t8-t7) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo5 = {284, 408, 11, 61, 98, 549, 539, 108, 212, 566, 102, 343, 464, 616, 722, 528, 706, 697, 159, 250, 0, 449, 105, 514, 38, 48, 662, 455, 627, 717, 411, 296, 178, 546, 605, 387, 45, 790, 83, 395, 298, 157, 362, 641, 28, 401, 446, 463, 447, 682, 632, 527, 624, 155, 745, 325, 453, 439, 597, 638, 500, 531, 770, 510, 302, 392, 437, 656, 713, 179, 565, 326, 607, 66, 25, 530, 537, 753, 538, 467, 24, 554, 427, 228, 242, 692, 491, 764, 460, 246, 265, 534, 106, 313, 421, 678, 47, 101, 185, 233, 281, 117, 349, 590, 783, 174, 536, 469, 86, 417, 247, 223, 128, 207, 226, 142, 704, 145, 517, 84, 558, 423, 339, 440, 341, 671, 55, 476, 270, 685, 679, 645, 257, 571, 263, 482, 621, 711, 730, 87, 39, 121, 70, 752, 53, 580, 394, 129, 562, 385, 382, 714, 667, 32, 592, 149, 798, 402, 40, 628, 693, 750, 529, 195, 299, 741, 56, 170, 80, 657, 96, 271, 718, 507, 225, 331, 181, 51, 404, 501, 556, 540, 311, 253, 433, 600, 4, 780, 648, 220, 735, 478, 506, 59, 176, 94, 19, 564, 629, 126, 95, 206, 508, 351, 131, 654, 133, 192, 461, 134, 503, 119, 150, 110, 637, 765, 665, 329, 633, 390, 13, 283, 118, 82, 412, 758, 579, 163, 746, 255, 17, 794, 570, 269, 487, 425, 279, 294, 691, 416, 238, 244, 144, 643, 15, 97, 728, 365, 74, 345, 672, 148, 37, 522, 584, 559, 426, 183, 468, 800, 216, 418, 286, 143, 441, 606, 694, 545, 498, 208, 484, 221, 274, 100, 712, 479, 158, 272, 361, 611, 797, 327, 353, 334, 496, 109, 650, 360, 544, 608, 789, 603, 407, 669, 175, 776, 635, 727, 687, 262, 113, 748, 373, 509, 123, 414, 115, 77, 65, 560, 173, 737, 124, 640, 355, 138, 371, 475, 755, 415, 769, 773, 33, 761, 22, 231, 596, 205, 132, 154, 436, 782, 31, 709, 372, 141, 483, 589, 204, 585, 521, 779, 211, 184, 724, 267, 288, 116, 581, 18, 34, 573, 431, 680, 488, 595, 125, 486, 357, 229, 639, 489, 675, 700, 322, 194, 50, 504, 774, 168, 68, 217, 715, 781, 171, 499, 594, 197, 103, 323, 245, 370, 644, 219, 561, 301, 586, 137, 337, 215, 617, 386, 784, 614, 44, 729, 518, 266, 384, 698, 318, 448, 647, 161, 258, 369, 756, 524, 104, 276, 35, 232, 236, 754, 256, 684, 799, 1, 381, 190, 120, 391, 177, 332, 661, 763, 399, 723, 122, 58, 398, 457, 474, 572, 289, 60, 239, 278, 588, 191, 690, 321, 316, 548, 43, 525, 523, 356, 333, 290, 676, 659, 716, 330, 275, 304, 742, 209, 551, 405, 477, 686, 153, 725, 652, 655, 778, 164, 210, 187, 576, 768, 749, 368, 54, 619, 146, 422, 472, 512, 492, 490, 76, 649, 653, 505, 541, 291, 166, 64, 230, 6, 555, 443, 92, 751, 14, 738, 214, 726, 701, 400, 435, 569, 613, 442, 273, 736, 203, 277, 8, 193, 760, 130, 307, 502, 99, 438, 293, 241, 495, 578, 602, 739, 314, 660, 626, 196, 280, 757, 12, 456, 139, 432, 282, 444, 287, 297, 695, 406, 347, 493, 268, 380, 454, 535, 363, 791, 470, 16, 93, 315, 481, 785, 634, 583, 336, 352, 397, 67, 152, 162, 172, 710, 658, 497, 615, 41, 396, 379, 107, 743, 81, 788, 377, 721, 346, 591, 636, 169, 646, 393, 222, 237, 234, 601, 189, 623, 199, 342, 466, 708, 452, 563, 575, 609, 167, 252, 264, 248, 582, 744, 618, 75, 285, 20, 473, 766, 354, 320, 458, 557, 516, 771, 69, 243, 612, 542, 91, 767, 793, 428, 112, 249, 543, 702, 71, 666, 642, 720, 494, 550, 587, 10, 733, 46, 52, 348, 651, 413, 480, 78, 719, 526, 89, 63, 699, 36, 732, 740, 88, 459, 62, 376, 419, 201, 688, 705, 218, 156, 202, 235, 140, 367, 200, 165, 111, 30, 310, 533, 2, 410, 135, 762, 677, 72, 519, 49, 403, 375, 552, 29, 324, 306, 796, 465, 747, 574, 378, 309, 734, 251, 344, 786, 445, 303, 224, 673, 317, 625, 683, 340, 610, 772, 389, 670, 759, 261, 731, 520, 707, 240, 593, 663, 471, 5, 359, 777, 198, 27, 388, 664, 366, 292, 186, 260, 254, 668, 689, 3, 604, 182, 622, 515, 485, 513, 450, 424, 300, 127, 136, 787, 568, 681, 462, 703, 358, 319, 305, 85, 511, 792, 308, 420, 295, 364, 620, 114, 451, 567, 26, 409, 9, 696, 73, 57, 630, 599, 338, 23, 180, 532, 374, 328, 151, 160, 674, 434, 259, 775, 21, 553, 188, 795, 577, 598, 350, 213, 429, 312, 631, 90, 7, 79, 430, 42, 383, 147, 547, 227};
-		BubbleSort x5 = new BubbleSort(); // Creacion de una instancia de BubbleSort
-		long t9 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x5.OrdenarBurbuja(arreglo5); // Llamar la funcion de ordenamiento
-		long t10 = System.nanoTime();  // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo5.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo5[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo5.length + "  " + "Ha tardado " + (t10-t9) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		
-		System.out.println ("SelectionSort"); // A continuacion casos de prueba N vs nanosegundos del BubbleSort 
-		// Arreglo Asignado 
-		{int []arreglo6 = {42, 17, 8, 32, 43, 22, 21, 4, 29, 3};
-		SelectionSort x6 = new SelectionSort(); // Creacion de una instancia de SelectionSort
-		long t11 = System.nanoTime();   // Inicio del conteo en nanosegundos
-		x6.OrdenarSeleccion(arreglo6); // Llamar la funcion de ordenamiento
-		long t12 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo6.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo6[i]);
-		//}
-		
-		System.out.println ("N: "+ arreglo6.length + "   " + "Ha tardado " + (t12-t11) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo7 = {60, 46, 39, 5, 22, 71, 37, 6, 17, 99, 88, 89, 78, 51, 81, 25, 60, 96, 9, 24, 83, 4, 12, 69, 92, 34, 73, 13, 31, 11, 23, 48, 38, 80, 41, 86, 67, 43, 77, 21, 18, 65, 50, 58, 62, 95, 85, 56, 7, 28, 74, 66, 79, 55, 59, 40, 29, 84, 30, 8, 1, 32, 2, 90, 100, 75, 45, 76, 10, 36, 70, 94, 14, 63, 16, 44, 64, 87, 15, 97, 57, 27, 20, 47, 54, 49, 35, 42, 93, 91, 52, 61, 82, 26, 3, 98, 19, 68, 72, 53};
-		SelectionSort x7 = new SelectionSort(); // Creacion de una instancia de SelectionSort
-		long t13 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x7.OrdenarSeleccion(arreglo7); // Llamar la funcion de ordenamiento
-		long t14 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo7.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo7[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo7.length + "  " + "Ha tardado " + (t14-t13) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo8 = {64, 240, 125, 120, 80, 30, 159, 206, 224, 22, 244, 91, 137, 211, 74, 46, 49, 84, 52, 72, 23, 71, 199, 114, 36, 238, 205, 129, 134, 10, 11, 89, 110, 130, 165, 126, 55, 225, 133, 82, 178, 57, 67, 139, 2, 143, 104, 94, 230, 90, 65, 99, 78, 25, 131, 149, 146, 32, 250, 26, 208, 31, 14, 176, 48, 161, 116, 222, 54, 105, 106, 124, 235, 92, 197, 171, 118, 85, 163, 113, 209, 73, 195, 27, 107, 192, 248, 193, 41, 187, 172, 121, 12, 3, 87, 168, 236, 188, 247, 212, 19, 162, 183, 16, 95, 112, 83, 241, 33, 170, 246, 69, 123, 127, 154, 70, 151, 213, 93, 185, 147, 39, 167, 132, 152, 108, 1, 38, 141, 9, 196, 98, 29, 37, 181, 234, 179, 160, 204, 51, 59, 156, 233, 226, 4, 189, 122, 218, 119, 43, 228, 115, 200, 6, 88, 58, 24, 219, 144, 135, 231, 169, 221, 202, 75, 243, 150, 239, 66, 5, 182, 237, 201, 166, 97, 194, 173, 191, 53, 101, 18, 180, 210, 20, 47, 109, 96, 117, 63, 86, 45, 245, 13, 227, 17, 214, 77, 142, 249, 35, 220, 21, 164, 42, 157, 34, 148, 15, 153, 64, 103, 217, 8, 229, 203, 190, 102, 215, 198, 50, 68, 232, 216, 145, 100, 7, 242, 138, 184, 76, 79, 177, 155, 136, 223, 186, 28, 56, 44, 175, 111, 207, 128, 140, 40, 61, 158, 60, 81, 62};
-		SelectionSort x8 = new SelectionSort(); // Creacion de una instancia de SelectionSort
-		long t15 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x8.OrdenarSeleccion(arreglo8); // Llamar la funcion de ordenamiento
-		long t16 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo8.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo8[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo8.length + "  " + "Ha tardado " + (t16-t15) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo9 = {192, 326, 170, 311, 96, 342, 291, 260, 224, 226, 33, 349, 331, 162, 385, 309, 225, 131, 159, 83, 129, 97, 380, 319, 141, 222, 336, 132, 24, 223, 215, 357, 37, 365, 368, 46, 381, 325, 206, 259, 193, 228, 341, 49, 140, 195, 55, 35, 98, 317, 30, 154, 293, 370, 31, 185, 177, 54, 354, 242, 377, 110, 262, 164, 130, 308, 398, 340, 295, 209, 273, 250, 353, 310, 53, 21, 78, 113, 329, 361, 202, 316, 323, 314, 77, 214, 39, 343, 104, 287, 103, 25, 267, 134, 379, 14, 256, 263, 299, 240, 313, 312, 335, 95, 115, 235, 188, 213, 52, 179, 87, 138, 279, 6, 284, 234, 7, 277, 356, 207, 117, 10, 241, 345, 50, 268, 196, 258, 93, 5, 94, 4, 40, 63, 72, 190, 210, 42, 36, 191, 232, 136, 171, 283, 189, 246, 17, 337, 69, 73, 333, 327, 81, 91, 183, 20, 22, 355, 146, 243, 174, 38, 328, 300, 152, 186, 161, 44, 198, 142, 375, 252, 219, 48, 127, 369, 41, 290, 305, 306, 56, 297, 384, 90, 251, 112, 253, 358, 143, 285, 211, 27, 62, 116, 338, 176, 26, 157, 321, 75, 339, 217, 289, 400, 372, 374, 239, 387, 307, 264, 86, 236, 160, 296, 123, 378, 80, 13, 294, 248, 395, 82, 238, 265, 200, 348, 373, 158, 133, 332, 43, 322, 67, 216, 9, 65, 2, 347, 364, 23, 18, 125, 0, 302, 270, 286, 58, 187, 64, 394, 367, 388, 360, 229, 203, 180, 16, 261, 245, 57, 28, 255, 76, 165, 280, 208, 19, 231, 371, 399, 233, 334, 257, 29, 204, 12, 85, 71, 47, 151, 352, 106, 304, 272, 105, 205, 254, 15, 149, 218, 8, 128, 351, 178, 201, 318, 382, 301, 324, 99, 376, 59, 60, 166, 144, 199, 386, 147, 173, 181, 362, 156, 391, 288, 383, 74, 281, 34, 114, 51, 396, 109, 66, 276, 315, 126, 79, 392, 346, 303, 32, 275, 244, 230, 366, 101, 118, 121, 168, 167, 135, 344, 70, 363, 88, 137, 124, 212, 61, 220, 247, 271, 145, 237, 100, 197, 111, 3, 390, 350, 107, 119, 269, 150, 84, 11, 194, 359, 330, 153, 389, 108, 89, 298, 320, 282, 227, 393, 249, 274, 139, 184, 155, 292, 169, 397, 122, 92, 148, 266, 102, 120, 278, 175, 221, 68, 1, 172, 45, 182};
-		SelectionSort x9 = new SelectionSort(); // Creacion de una instancia de SelectionSort
-		long t17 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x9.OrdenarSeleccion(arreglo9); // Llamar la funcion de ordenamiento
-		long t18 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo9.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo9[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo9.length + "  " + "Ha tardado " + (t18-t17) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-		// Arreglo Asignado 
-		{int []arreglo10 = {284, 408, 11, 61, 98, 549, 539, 108, 212, 566, 102, 343, 464, 616, 722, 528, 706, 697, 159, 250, 0, 449, 105, 514, 38, 48, 662, 455, 627, 717, 411, 296, 178, 546, 605, 387, 45, 790, 83, 395, 298, 157, 362, 641, 28, 401, 446, 463, 447, 682, 632, 527, 624, 155, 745, 325, 453, 439, 597, 638, 500, 531, 770, 510, 302, 392, 437, 656, 713, 179, 565, 326, 607, 66, 25, 530, 537, 753, 538, 467, 24, 554, 427, 228, 242, 692, 491, 764, 460, 246, 265, 534, 106, 313, 421, 678, 47, 101, 185, 233, 281, 117, 349, 590, 783, 174, 536, 469, 86, 417, 247, 223, 128, 207, 226, 142, 704, 145, 517, 84, 558, 423, 339, 440, 341, 671, 55, 476, 270, 685, 679, 645, 257, 571, 263, 482, 621, 711, 730, 87, 39, 121, 70, 752, 53, 580, 394, 129, 562, 385, 382, 714, 667, 32, 592, 149, 798, 402, 40, 628, 693, 750, 529, 195, 299, 741, 56, 170, 80, 657, 96, 271, 718, 507, 225, 331, 181, 51, 404, 501, 556, 540, 311, 253, 433, 600, 4, 780, 648, 220, 735, 478, 506, 59, 176, 94, 19, 564, 629, 126, 95, 206, 508, 351, 131, 654, 133, 192, 461, 134, 503, 119, 150, 110, 637, 765, 665, 329, 633, 390, 13, 283, 118, 82, 412, 758, 579, 163, 746, 255, 17, 794, 570, 269, 487, 425, 279, 294, 691, 416, 238, 244, 144, 643, 15, 97, 728, 365, 74, 345, 672, 148, 37, 522, 584, 559, 426, 183, 468, 800, 216, 418, 286, 143, 441, 606, 694, 545, 498, 208, 484, 221, 274, 100, 712, 479, 158, 272, 361, 611, 797, 327, 353, 334, 496, 109, 650, 360, 544, 608, 789, 603, 407, 669, 175, 776, 635, 727, 687, 262, 113, 748, 373, 509, 123, 414, 115, 77, 65, 560, 173, 737, 124, 640, 355, 138, 371, 475, 755, 415, 769, 773, 33, 761, 22, 231, 596, 205, 132, 154, 436, 782, 31, 709, 372, 141, 483, 589, 204, 585, 521, 779, 211, 184, 724, 267, 288, 116, 581, 18, 34, 573, 431, 680, 488, 595, 125, 486, 357, 229, 639, 489, 675, 700, 322, 194, 50, 504, 774, 168, 68, 217, 715, 781, 171, 499, 594, 197, 103, 323, 245, 370, 644, 219, 561, 301, 586, 137, 337, 215, 617, 386, 784, 614, 44, 729, 518, 266, 384, 698, 318, 448, 647, 161, 258, 369, 756, 524, 104, 276, 35, 232, 236, 754, 256, 684, 799, 1, 381, 190, 120, 391, 177, 332, 661, 763, 399, 723, 122, 58, 398, 457, 474, 572, 289, 60, 239, 278, 588, 191, 690, 321, 316, 548, 43, 525, 523, 356, 333, 290, 676, 659, 716, 330, 275, 304, 742, 209, 551, 405, 477, 686, 153, 725, 652, 655, 778, 164, 210, 187, 576, 768, 749, 368, 54, 619, 146, 422, 472, 512, 492, 490, 76, 649, 653, 505, 541, 291, 166, 64, 230, 6, 555, 443, 92, 751, 14, 738, 214, 726, 701, 400, 435, 569, 613, 442, 273, 736, 203, 277, 8, 193, 760, 130, 307, 502, 99, 438, 293, 241, 495, 578, 602, 739, 314, 660, 626, 196, 280, 757, 12, 456, 139, 432, 282, 444, 287, 297, 695, 406, 347, 493, 268, 380, 454, 535, 363, 791, 470, 16, 93, 315, 481, 785, 634, 583, 336, 352, 397, 67, 152, 162, 172, 710, 658, 497, 615, 41, 396, 379, 107, 743, 81, 788, 377, 721, 346, 591, 636, 169, 646, 393, 222, 237, 234, 601, 189, 623, 199, 342, 466, 708, 452, 563, 575, 609, 167, 252, 264, 248, 582, 744, 618, 75, 285, 20, 473, 766, 354, 320, 458, 557, 516, 771, 69, 243, 612, 542, 91, 767, 793, 428, 112, 249, 543, 702, 71, 666, 642, 720, 494, 550, 587, 10, 733, 46, 52, 348, 651, 413, 480, 78, 719, 526, 89, 63, 699, 36, 732, 740, 88, 459, 62, 376, 419, 201, 688, 705, 218, 156, 202, 235, 140, 367, 200, 165, 111, 30, 310, 533, 2, 410, 135, 762, 677, 72, 519, 49, 403, 375, 552, 29, 324, 306, 796, 465, 747, 574, 378, 309, 734, 251, 344, 786, 445, 303, 224, 673, 317, 625, 683, 340, 610, 772, 389, 670, 759, 261, 731, 520, 707, 240, 593, 663, 471, 5, 359, 777, 198, 27, 388, 664, 366, 292, 186, 260, 254, 668, 689, 3, 604, 182, 622, 515, 485, 513, 450, 424, 300, 127, 136, 787, 568, 681, 462, 703, 358, 319, 305, 85, 511, 792, 308, 420, 295, 364, 620, 114, 451, 567, 26, 409, 9, 696, 73, 57, 630, 599, 338, 23, 180, 532, 374, 328, 151, 160, 674, 434, 259, 775, 21, 553, 188, 795, 577, 598, 350, 213, 429, 312, 631, 90, 7, 79, 430, 42, 383, 147, 547, 227};
-		SelectionSort x10 = new SelectionSort(); // Creacion de una instancia de SelectionSort
-		long t19 = System.nanoTime(); // Inicio del conteo en nanosegundos
-		x10.OrdenarSeleccion(arreglo10); // Llamar la funcion de ordenamiento
-		long t20 = System.nanoTime(); // Final del conteo en nanosegundos
-		
-		//for(int i=0; i<arreglo10.length; i++){ // Imprime los numeros ordenados
-			//System.out.println(arreglo10[i]);
-			
-		//}
-		
-		System.out.println ("N: "+ arreglo10.length + "  " + "Ha tardado " + (t20-t19) + "nanosegundos	");} // Imprime el tamano del arreglo(N) y el tiempo que duro en ordenar el arreglo en nanosegundos
-	}
 
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		//Atributos del array aleatorio y las busquedas
+		int inicio = 1;
+		int fin = 100;
+		int tamaño = 100;
+		
+		
+		// Prueba de QuickSort
+		int arreglo[] = arrayAleatorio.llenarArrayAleatorio(inicio, fin, tamaño);
+		long inicialQS = System.nanoTime();
+		QuickSort.quicksort(arreglo, 0, tamaño - 1);
+		long finalQS = System.nanoTime();
+		long duracionQS = (finalQS - inicialQS);
+		System.out.println("QuickSort: "+ Arrays.toString(arreglo)+ "; Duracion: "+ duracionQS);
+
+		//Prueba de InsertionSort
+		int arreglo2[] = arrayAleatorio.llenarArrayAleatorio(inicio, fin, tamaño);
+		long inicialIS = System.nanoTime();
+		InsertionSort.insertionsort(arreglo2);
+		long finalIS = System.nanoTime();
+		long duracionIS = (finalIS - inicialIS);
+		System.out.println("InsertionSort: "+ Arrays.toString(arreglo2)+ "; Duracion: "+ duracionIS);
+
+		//Prueba de MergeSort
+		int arreglo3[] = arrayAleatorio.llenarArrayAleatorio(inicio, fin, tamaño);
+		long inicialMS = System.nanoTime();
+		int[] mergesort = MergeSort.mergesort(arreglo3);
+		long finalMS = System.nanoTime();
+		long duracionMS = (finalMS - inicialMS);
+		System.out.println("MergeSort: "+ Arrays.toString(mergesort)+ "; Duracion: "+ duracionMS);
+		
+		//Prueba de BubbleSort
+		int arreglo4[] = arrayAleatorio.llenarArrayAleatorio(inicio, fin, tamaño);
+		long inicialBS = System.nanoTime();
+		BubbleSort.bubblesort(arreglo4);
+		long finalBS = System.nanoTime();
+		long duracionBS = (finalBS - inicialBS);
+		System.out.println("BubbleSort: "+ Arrays.toString(arreglo4)+ "; Duracion: "+ duracionBS);
+		
+		//Prueba de SelectionSort
+		int arreglo5[] = arrayAleatorio.llenarArrayAleatorio(inicio, fin, tamaño);
+		long inicialSS = System.nanoTime();
+		BubbleSort.bubblesort(arreglo5);
+		long finalSS = System.nanoTime();
+		long duracionSS = (finalSS - inicialSS);
+		System.out.println("SelectionSort: "+ Arrays.toString(arreglo5)+ "; Duracion: "+ duracionSS);
+		
+		// Prueba de HeapSort
+		int arreglo6[] = arrayAleatorio.llenarArrayAleatorio(inicio, fin, tamaño);
+		long inicialHS = System.nanoTime();
+        HeapSort.HeapSort(arreglo6);
+		long finalHS = System.nanoTime();
+		long duracionHS = (finalHS - inicialHS);
+		System.out.println("HeapSort | Duracion: "+ duracionHS +"; "+ Arrays.toString(arreglo6));
+		
+		
+		//Arreglo para algoritmo LinearSearch 
+		int arreglo7[] = arrayAleatorio.llenarArrayAleatorio(inicio, fin - 1, tamaño);
+		//Los casos para LinearSearch
+		int mejorCL = 0;
+		int peorCL = fin - 1;
+		int promedioCL = fin/2;
+		int busqueda = fin;
+		arreglo7[promedioCL] = fin;
+		//Prueba del LinearSearch
+		long inicialLS = System.nanoTime();
+		int busquedaLineal = LinearSearch.linearsearch(arreglo7, busqueda);
+		long finalLS = System.nanoTime();
+		long duracionLS = (finalLS - inicialLS);
+		System.out.println("LinearSearch: El numero "+ busqueda +" se encuentra en la posicion "+ busquedaLineal + " ; Duracion: "+ duracionLS);
+		
+		//Los casos para BinarySearch
+		int mejorCB = fin/2;
+		int peorCB = fin - 1;
+		int promedioCB = fin/4;
+		int valor = (arreglo[promedioCB] + 1);
+		arreglo[promedioCB] = valor;
+		// Prueba del BinarySearch
+		long inicialBiS = System.nanoTime();
+		int busquedaBinaria = BinarySearch.binarysearch(arreglo, valor);
+		long finalBiS = System.nanoTime();
+		long duracionBiS = (finalBiS - inicialBiS);
+		System.out.println("BinarySearch: El numero "+ valor +" se encuentra en la posicion "+ busquedaBinaria + " ; Duracion: "+ duracionBiS);
+
+		
+	}
+	
 }
+
